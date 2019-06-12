@@ -7,7 +7,9 @@ Created on Fri May 31 18:40:59 2019
 #funciones
 def tablero(x):
     if x>8:
-        return "ERROR AL IMPRIMIR EL TABLERO, INGRESE UN VALOR VÁLIDO"
+        return " ERROR AL IMPRIMIR EL TABLERO, INGRESE UN VALOR VÁLIDO"
+    if x<4:
+        return " EL TAMAÑO MÍNIMO ES 4X4, INGRESE UN VALOR VÁLIDO"
     columnas=["A","B","C","D","E","F","G","H"]
     filas=[0,1,2,3,4,5,6,7,8]
     for z in range (0,x+1):
