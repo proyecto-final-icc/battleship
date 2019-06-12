@@ -21,12 +21,13 @@ while trial>0:
         if game_size<9 and game_size>3:
             break
         game_size=game_size
-    huascar=[" ",int]
-    huascar[0]=input("Ingrese columna de ubicación del Huáscar: ").upper()
-    huascar[1]=int(input("Ingrese fila de ubicación del Huáscar: "))
-    esmeralda=["",int]
-    esmeralda[0]=battleship_funciones.char_aleatorio(game_size)
-    esmeralda[1]=random.randint(0,game_size)
+    print("El largo del Huáscar es de 2x1.")
+    huascar={}
+    huascar[input("Ingrese columna de ubicación de la proa Huáscar: ").upper()]=int(input("Ingrese fila de ubicación de la proa del Huáscar: "))
+    direccion=input("Para la popa del Huáscar escriba +x, -x, +y o -y, según sea derecha, izquierda, arriba o abajo:")
+
+    cochrane={}
+    cochrane[battleship_funciones.char_aleatorio(game_size)]=int(random.randint(1,game_size+1))
     #Ingresar el código de juego por encima de esta línea
     trial-=1
 
