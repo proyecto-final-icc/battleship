@@ -11,13 +11,13 @@ trial=int(input("Ingrese el número de veces a jugar, debe ser mayor a 0."))
 while trial>0:
     #Código del juego
     game_size=10
-    while game_size>9:
+    while game_size>8 or game_size<4:
         game_size=int(input("Ingrese modalidad de juego (hasta 8x8):"))
         print("Angamos")
         print("Octubre 8, 1879")
         print("Bienvenido Almirante Grau")
         print(battleship_funciones.tablero(game_size))
-        if game_size<=8:
+        if game_size<9 and game_size>3:
             break
         game_size=game_size
     huascar=[" ",int]
