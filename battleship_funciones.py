@@ -23,7 +23,12 @@ def tablero(x):
         else:
             print()
     return ""
+
 def char_aleatorio(x):
     columnas=["A","B","C","D","E","F","G","H"]
     import random
     return columnas[random.randint(0,x)]
+
+def popa(x):
+    if x=="+x":
+        columnas=[chr(i) for i in range(97,y)]
