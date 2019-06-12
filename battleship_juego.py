@@ -7,7 +7,7 @@ Created on Fri May 31 17:53:25 2019
 import msvcrt
 import battleship_funciones
 import random
-trial=2
+trial=int(input("Ingrese el número de veces a jugar, debe ser mayor a 0."))
 while trial>0:
     #Código del juego
     game_size=10
