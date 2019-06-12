@@ -13,6 +13,7 @@ while trial>0:
     game_size=10
     while game_size>8 or game_size<4:
         game_size=int(input("Ingrese modalidad de juego (hasta 8x8):"))
+        print()
         print("Angamos")
         print("Octubre 8, 1879")
         print("Bienvenido Almirante Grau")
