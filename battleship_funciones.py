@@ -11,7 +11,7 @@ def tablero(x):
     if x<4:
         return " EL TAMAÑO MÍNIMO ES 4X4, INGRESE UN VALOR VÁLIDO."
     columnas=[chr(i).upper() for i in range(97,123)]
-    filas=[x for x in range(1,27)]
+    filas=[x for x in range(27)]
     for z in range (0,x+1):
         for i in range (0,x):
             if z==0:
