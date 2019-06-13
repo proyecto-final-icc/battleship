@@ -10,8 +10,8 @@ def tablero(x):
         return " ERROR AL IMPRIMIR EL TABLERO, INGRESE UN VALOR VÁLIDO"
     if x<4:
         return " EL TAMAÑO MÍNIMO ES 4X4, INGRESE UN VALOR VÁLIDO"
-    columnas=["A","B","C","D","E","F","G","H"]
-    filas=[0,1,2,3,4,5,6,7,8]
+    columnas=[chr(i) for i in range(97,123)]
+    filas=[x for x in range(1,9)]
     for z in range (0,x+1):
         for i in range (0,x):
             if z==0:
@@ -25,7 +25,7 @@ def tablero(x):
     return ""
 
 def char_aleatorio(x):
-    columnas=["A","B","C","D","E","F","G","H"]
+    columnas=[chr(i) for i in range(97,123)]
     import random
     return columnas[random.randint(0,x)]
 
