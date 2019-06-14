@@ -30,13 +30,13 @@ while trial>0:
     intersección=set(ataque_enemigo.items() and ataque_usuario.items())
     while len(intersección)<2:
         if turno==True:
-            print("Tu turno de atacar:")
+            print("Tu turno de atacar, ingresarás las coordenadas del misil:")
             ataque_usuario[str(input("Ingrese columna a atacar:").upper())]=int(input("Ingrese fila a atacar:"))
             turno=False
         elif turno==False:      
             print("Turno de la computadora")
             ataque_enemigo[battleship_funciones.char_aleatorio(game_size)]=int(random.randint(1,game_size+1))
-            print("Te atacaron en:", ataque_enemigo)
+            print("Te atacaron en la coordenada:", ataque_enemigo)
             turno=True
     if huascar in ataque_enemigo:
         print("Ganaste")
